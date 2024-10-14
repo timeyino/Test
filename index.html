@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Newspaper Landing Page</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">Daily Tea</a></h1>
+            <nav>
+                <div class="hamburger">☰</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="article.html">Article</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="home-main">
+            <section class="featured-article">
+                <h2>Featured Article</h2>
+                <div class="article">
+                    <img class="article-img" src="feimg10.jpg" alt="photo description">
+                    <h3>Accidental Poisoning at Local Coffee Shop Sends Three to Hospital</h3>
+                    <p>In a shocking incident yesterday afternoon, three patrons of a downtown coffee shop were hospitalized after an accidental poisoning. The incident occurred when a cleaning solution was mistakenly used in place of a milk substitute. Emergency responders arrived quickly, and all affected customers were treated at the scene before being transported to the hospital. Authorities have launched an investigation into how the mix-up occurred, while the coffee shop remains temporarily closed. Fortunately, the individuals are expected to make a full recovery.</p>
+                    <a href="./article.html" target="_blank" class="article-link">Read more </a>
+                </div>
+                <div class="article2">
+                    <img class="article-img" src="hh.jpg" alt="photo description">
+                    <h3>Death Toll From hurricane Helene Rises</h3>
+                    <p>The death toll from Hurricane Helene inched up to 227 on Saturday as the grim task of recovering bodies continued more than a week after the monster storm ravaged the Southeast and killed people in six states.
+                        Helene came ashore Sept. 26 as a Category 4 hurricane and carved a wide swath of destruction as it moved northward from Florida, washing away homes, destroying roads and knocking out electricity and cellphone service for millions.
+                        The number of deaths stood at 225 on Friday; two more were recorded in South Carolina the following day. It was still unclear how many people were unaccounted for or missing, and the toll could rise even higher.
+                        Helene is the deadliest hurricane to hit the mainland U.S. since Katrina in 2005. About half the victims were in North Carolina, while dozens more were killed in Georgia and South Carolina.
+                        </p>
+                    <a href="./article.html" target="_blank" class="article-link">Read more </a>
+                </div>
+            </section>
+            <section class="latest-news">
+                <h2>Latest News</h2>
+                <div>
+                    <div class="news">
+                        <h4>Tech Giants Face Antitrust Scrutiny as Global Regulations Tighten</h4>
+                        <p>Governments worldwide are increasing pressure on major tech companies over monopolistic practices.</p>
+                    </div>
+
+                    <div class="news">
+                        <h4>Breakthrough Cancer Treatment Shows Promise in Early Trials</h4>
+                        <p>A new immunotherapy drug has demonstrated remarkable success in shrinking tumors in early-stage cancer patients.</p>
+                    </div>
+
+                    <div class="news">
+                        <h4>Electric Vehicle Sales Surge as Governments Push for Greener Transport</h4>
+                        <p>With incentives from governments and increased consumer interest, electric vehicle sales have skyrocketed in the last quarter.</p>
+                    </div>
+
+                    <div class="news">
+                        <h4>Rising Inflation Sparks Concerns for Global Economy</h4>
+                        <p>Inflation rates have hit a 10-year high in many countries, causing concerns about potential economic slowdowns.</p>
+                    </div>
+
+                    <div class="news">
+                        <h4>World’s Oceans Reaching Record High Temperatures, Scientists Warn</h4>
+                        <p>Marine researchers report that global ocean temperatures have reached alarming levels due to climate change.</p>
+                    </div>
+
+                    <div class="news">
+                        <h4>Hollywood Writers’ Strike Ends After Landmark Agreement on Streaming Royalties</h4>
+                        <p>After months of negotiation, Hollywood writers have secured better compensation for streaming content, marking a victory for creatives in the digital age.</p>
+                    </div>
+
+                    <div class="news">
+                        <h4>Historic Archaeological Discovery Unearthed in Egypt</h4>
+                        <p>Archaeologists in Egypt have uncovered an ancient tomb believed to date back over 4,000 years.</p>
+                    </div>
+
+                    <div class="news">
+                        <h4>Small Businesses Thrive with Social Media Marketing in Post-Pandemic Economy</h4>
+                        <p>Entrepreneurs are increasingly leveraging social media platforms to reach new customers.</p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <script>
+            document.querySelector('.hamburger').addEventListener('click', function() {
+                document.querySelector('nav ul').classList.toggle('active');
+            })
+        </script>
+        <footer>
+            <p>Contact us at dailytea@testmail.com</p>
+        </footer>
+    </body>
+</html>

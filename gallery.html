@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Daily Tea</a></h1>
+        <nav>
+            <div class="hamburger">☰</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-header">
+        <h1>Gallery</h1>
+    </div>
+    <main class="photo-gallery">
+        <div id="scroll-container">
+            <div class="content"><img src="feimg1.jpg" alt="photo description"></div>
+            <div class="content"><img src="feimg2.jpg" alt="photo description"></div>
+            <div class="content"><img src="feimg3.jpg" alt="photo description"></div>
+            <div class="content"><img src="feimg4.jpg" alt="photo description"></div>
+            <div class="content"><img src="feimg5.jpg" alt="photo description"></div>
+            <div class="content"><img src="feimg6.jpg" alt="photo description"></div>
+            <div class="content"><img src="feimg7.jpg" alt="photo description"></div>
+            <div class="content"><img src="feimg8.jpg" alt="photo description"></div>
+            <div class="content"><img src="feimg9.jpg" alt="photo description"></div>
+
+        </div>
+
+        <div class="scroll-buttons">
+            <button onclick="scrollToLeft()">Scroll Left</button>
+            <button onclick="scrollRight()">Scroll Right</button>
+        </div>
+    </main>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('active');
+        })
+
+        const scrollContainer = document.getElementById('scroll-container');
+        function scrollToLeft() {
+            scrollContainer.scrollBy({
+                left: -100,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollRight() {
+            scrollContainer.scrollBy({
+                left: 100,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <footer>
+        <p>Contact us at dailytea@testmail.com</p>
+    </footer>
+</body>
+
+</html>

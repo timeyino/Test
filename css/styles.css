@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.unsplash.com/photo-1604147706283-d7119b5b822c?q=80&w=2959&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #FAF9F6;
+    bottom: 0px;
+    border-top: 1px solid #ccc;
+}
+
+.home-main{
+    display: flex;
+    flex-direction: row;
+}
+
+.featured-article{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+
+.latest-news{
+    border: 1px solid #eee;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #FAF9F6
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #FAF9F6;
+    text-align: center;
+}
+
+.article-content {
+    background-color: #FAF9F6;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+.article-content2 {
+    background-color: #FAF9F6;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+.article-content>h3, .article-content>p{
+    margin: 0;
+}
+
+.article{
+    padding: 20px;
+    background-color: #FAF9F6;
+    text-decoration: none;
+}
+
+.article-img{
+    width: 100%
+}
+
+.article-link{
+    color: #000;
+}
+
+.article-header{
+    background-color: #FAF9F6;
+}
+
+.news{
+    margin: 15px 0px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.news>h4, .news>p{
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.advertisement {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+#scroll-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.content>img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+}
+.advertisement {
+    background-color: aqua;
+    font-size: 24px; /* Adjust text size */
+    position: relative; /* Necessary for the 'left' property */
+    animation: move 3s linear infinite; /* Animation that runs continuously */
+    }
+    
+    /* Keyframes to animate the text */
+    @keyframes move {
+        0% {
+            left: 0; /* Start at the original position */
+        }
+        100% {
+            left: 100px; /* Move 100px to the right */
+        }
+    }
+    
+
+.scroll-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-buttons > button{
+    background-color: #FAF9F6;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 8px 12px;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+    nav ul.active {
+        display: flex;
+    }
+
+    .home-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featured-article{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .latest-news{
+        width: 90%;
+    }
+}
